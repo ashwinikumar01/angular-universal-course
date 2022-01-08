@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start:dev": "ng serve",
-    "build": "ng build",
+    "start": "npm run serve:ssr",
+    "build": "npm run build:ssr",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run angular-universal-course:serve-ssr",
+    "dev:ssr": "ng run universal:serve-ssr",
     "serve:ssr": "node dist/angular-universal-course/server/main.js",
     "build:ssr": "ng build --prod && ng run angular-universal-course:server:production",
     "prerender": "ng run angular-universal-course:prerender"

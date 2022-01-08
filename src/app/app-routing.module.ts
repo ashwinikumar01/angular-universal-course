@@ -7,7 +7,7 @@ import {AboutComponent} from './about/about.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: "home",
     component: HomeComponent
 
   },
@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: "**",
-    redirectTo: '/'
+    redirectTo: 'home'
   }
 ];
 
